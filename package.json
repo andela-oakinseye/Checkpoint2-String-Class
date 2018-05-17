@@ -1,0 +1,38 @@
+{
+  "name": "checkpoint2-string-class",
+  "version": "1.0.0",
+  "description": "An extension of javascript string class",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha ./test/string-class-test",
+    "cover": "./node_modules/.bin/istanbul cover _mocha test/*.*",
+    "coveralls": "npm run cover --captureExceptions test/ && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andela-oakinseye/Checkpoint2-String-Class.git"
+  },
+  "keywords": [
+    "oop",
+    "js",
+    "prototype",
+    "class",
+    "node"
+  ],
+  "author": "Olawale Akinseye",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andela-oakinseye/Checkpoint2-String-Class/issues"
+  },
+  "homepage": "https://github.com/andela-oakinseye/Checkpoint2-String-Class#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "coveralls": "^2.11.15",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.2.0",
+    "mocha-lcov-reporter": "^1.2.0"
+  }
+}
